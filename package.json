@@ -4,15 +4,24 @@
   "description": "A map generator",
   "license": "MIT",
   "scripts": {
-    "build": "cmake-js rebuild",
+    "build": "cmake-js build",
+    "build:electron" : "cmake-js build --runtime=electron",
     "pretest": "cmake-js rebuild",
-    "test": "mocha test"
+    "test": "mocha test",
+    "release:patch": "npm version patch -m 'Release %s'"
+  },
+  "files": [
+    "CMakeLists.txt",
+    "index.js",
+    "build/**/*.node",
+    "src",
+    "test"
+  ],
+  "dependencies": {
+    "bindings": "^1.2.1"
   },
   "devDependencies": {
     "cmake-js": "^1.0.2",
     "nan": "^2.0.9"
-  },
-  "dependencies": {
-    "bindings": "^1.2.1"
   }
 }
