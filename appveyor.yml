@@ -9,6 +9,7 @@ test_script:
 build_script:
   - npm run build:electron -- --runtime-version=0.33.3
   - npm pack
+  - dir
 
 
 
