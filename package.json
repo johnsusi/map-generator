@@ -1,6 +1,6 @@
 {
   "name": "map-generator",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "A map generator",
   "license": "MIT",
   "scripts": {
