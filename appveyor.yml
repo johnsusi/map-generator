@@ -6,9 +6,12 @@ test_script:
   - node --version
   - npm --version
 
-build:
+build_script:
   - npm build:electron
   - npm pack
+
+
+
 
 deploy:
   description: 'A release'
