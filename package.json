@@ -3,12 +3,16 @@
   "version": "0.0.3",
   "description": "A map generator",
   "license": "MIT",
+  "author": "John Susi <john@susi.se> (https://github.com/johnsusi)",
+  "repository": "johnsusi/map-generator",
+  "bugs": "https://github.com/johnsusi/map-generator/issues",
   "scripts": {
     "build": "cmake-js build",
     "build:electron": "cmake-js build --runtime=electron",
     "pretest": "cmake-js rebuild",
     "test": "mocha test",
-    "release:patch": "npm version patch -m 'Release %s'"
+    "release:patch": "npm version patch -m 'Release %s'",
+    "gh:upload": "npm pack && node upload.js"
   },
   "files": [
     "CMakeLists.txt",
@@ -18,10 +22,11 @@
     "test"
   ],
   "dependencies": {
-    "bindings": "^1.2.1"
+    "bindings": "^1.2.1",
   },
   "devDependencies": {
     "cmake-js": "^1.0.2",
-    "nan": "^2.0.9"
+    "nan": "^2.0.9",
+    "request": "^2.64.0"
   }
 }
