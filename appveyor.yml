@@ -7,7 +7,7 @@ test_script:
   - npm --version
 
 build_script:
-  - npm run build:electron '--' '--electron-version=0.33.3'
+  - npm run build:electron -- --electron-version=0.33.3
   - npm pack
 
 
