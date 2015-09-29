@@ -1,0 +1,18 @@
+{
+  "name": "map-generator",
+  "version": "0.0.2",
+  "description": "A map generator",
+  "license": "MIT",
+  "scripts": {
+    "build": "cmake-js rebuild",
+    "pretest": "cmake-js rebuild",
+    "test": "mocha test"
+  },
+  "devDependencies": {
+    "cmake-js": "^1.0.2",
+    "nan": "^2.0.9"
+  },
+  "dependencies": {
+    "bindings": "^1.2.1"
+  }
+}
