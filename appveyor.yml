@@ -11,12 +11,12 @@ build_script:
   - npm pack
   - dir
 
-
-
-
 deploy:
   description: 'A release'
   provider: GitHub
   artifact: /.*\.tgz/
   auth_token:
     secure: 43dm1ty9okNNWNCYCNEddhKnkCXS8wOxV9UA+J0WbUPVwWAzsThCqaenRa/1ZPij
+  on:
+    branch: master
+    appveyor_repo_tag: true
