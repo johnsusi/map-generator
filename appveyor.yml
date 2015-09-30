@@ -1,6 +1,6 @@
 environment:
   GITHUB_OAUTH_TOKEN:
-    secure: 43dm1ty9okNNWNCYCNEddhKnkCXS8wOxV9UA+J0WbUPVwWAzsThCqaenRa/1ZPij
+    secure: OqCUsed8DRsFueq2Ct/86kB8z18IdC+9NfVc1ERHYE4oqC146yUCjfCxVQJ/63xQ
 
 install:
   - ps: Install-Product node 0
@@ -23,7 +23,7 @@ on_success:
 #   provider: GitHub
 #   artifact: /.*\.tgz/
 #   auth_token:
-#     secure: 43dm1ty9okNNWNCYCNEddhKnkCXS8wOxV9UA+J0WbUPVwWAzsThCqaenRa/1ZPij
+#     secure: OqCUsed8DRsFueq2Ct/86kB8z18IdC+9NfVc1ERHYE4oqC146yUCjfCxVQJ/63xQ
 #   on:
 #     branch: master
 #     appveyor_repo_tag: true
