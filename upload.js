@@ -20,7 +20,7 @@ var req = request.get({
   },
   auth: {
     pass: 'x-oauth-basic',
-    user: '796cfe3f72683c6e4f79db4ecaaa23acae76e41d'
+    user: process.env['GITHUB_OAUTH_TOKEN']
   },
   json: true,
 }, function (err, res, body) {
