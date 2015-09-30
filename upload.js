@@ -7,7 +7,7 @@ require('dotenv').load();
 console.log(config.version);
 
 var file_name  = config.name + '-' + config.version + '.tgz'
-var asset_name = config.name + '-v' + config.version +
+var asset_name = config.name + '-v' + process.version +
                  '-' + process.platform + '-' + process.arch + '.tgz'
 
 var api_url = "https://api.github.com/repos/" + config.repository + '/releases/tags/v' + config.version;
