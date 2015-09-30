@@ -12,6 +12,8 @@
     "pretest": "cmake-js rebuild",
     "test": "mocha test",
     "release:patch": "npm version patch -m 'Release %s'",
+    "preversion": "echo 'preversion'",
+    "postversion": "echo 'postversion'",
     "gh:upload": "npm pack && node upload.js"
   },
   "files": [
