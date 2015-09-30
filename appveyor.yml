@@ -2,7 +2,7 @@ environment:
   GITHUB_OAUTH_TOKEN:
     secure: OqCUsed8DRsFueq2Ct/86kB8z18IdC+9NfVc1ERHYE4oqC146yUCjfCxVQJ/63xQ
 
-version: "{build}"
+version: {build}
 
 platform:
   - x86
