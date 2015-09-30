@@ -1,0 +1,21 @@
+language: node_js
+
+node_js:
+  - '4.1'
+
+compiler:
+  - clang
+
+before_script:
+  - npm install
+
+script:
+  - npm run build:electron -- --runtime-version=0.33.3
+  - npm pack
+
+after_success:
+  - npm upload
+
+env:
+  global:
+    secure: PGi8/b4YHilG6OJFAfN2+6zp9ZGtlHSaCIJ0v3brzFKu+CYyr7AgKVivhu575syl5/UEkcF9krVOjylVs4IwYEI5Fho3y1Gv28AYf+HrWWbYcJIs98M3dr8nTjOhFcapVvORsJmylXVNDSoJxFLObgrN2stMSH4ajxtJSh6dsnbo+QDXSc2/I3PS76+EFTfzsvP0CPXfVc9VJsiuA8xgpllxrvU3AyYE/0NnW1W7SuNXKOG3bScJWwlwL6F9TJ4igBRYOkL8Wt7Pg1ZjoWTvhV1LjF0BNITXDEPxxrsHsZYjpxV80jM68SrQk99urWr6YZuqWwka5M8YdJoY0hI4Pa6+Q8HfS5qfyS5dVijRG94pIM1NhPt2bpL1JGu/mLYF48BFZ1AuRz/p1KbsPVd1FLQIvaH16MZ1iVwJK8ptVzR/R9F/tRoCY0HaejWk5ZYmxp1AZO6w1DT1+Tq0NnAPW+uEcqCb19zJP4qucqEQZBHu4IRf3na+ElzvTYEGc3IU7ZiGhB6MwqrGVkCFofAf7ycLUZpub3d2hllU1U6dblIpdwEOvEVGFy0lckWWxTj+KS52QpVb93T9VE0TNtrlcNdQpN+obMTwMmATCW2dT0IUDfKHuSxetPBjATXUBI2ju4mFs8wdyfapTfMBRtETv7/vI9U5cLzYy78Rm0+vDtE=
