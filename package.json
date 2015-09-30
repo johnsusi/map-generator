@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "cmake-js": "^1.0.2",
+    "dotenv": "^1.2.0",
     "nan": "^2.0.9",
     "request": "^2.64.0"
   }
