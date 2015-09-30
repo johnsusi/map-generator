@@ -6,6 +6,11 @@ node_js:
 compiler:
   - clang
 
+branches:
+  only:
+    - master
+    - /v\d+\..*/
+
 before_script:
   - npm install
 
