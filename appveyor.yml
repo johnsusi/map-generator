@@ -2,6 +2,15 @@ environment:
   GITHUB_OAUTH_TOKEN:
     secure: OqCUsed8DRsFueq2Ct/86kB8z18IdC+9NfVc1ERHYE4oqC146yUCjfCxVQJ/63xQ
 
+version: {branch}-{build}
+
+platform:
+  - x86
+  - x64
+
+configuration:
+  - Release
+
 install:
   - ps: Install-Product node 0
   - npm install
@@ -17,6 +26,9 @@ build_script:
 
 on_success:
   - node upload.js
+
+artifacts:
+  - path: *.tgz
 
 # deploy:
 #   description: 'A release'
